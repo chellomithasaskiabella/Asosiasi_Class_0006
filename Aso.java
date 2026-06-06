@@ -73,4 +73,9 @@ class Mahasiswa extends Orang {
     public void ambilMataKuliah (MataKuliah mataKuliah) {
         mataKuliahDiambil.add(mataKuliah);
     }
+
+    @Override
+    public void tampilkanPeran() {
+        System.out.println(getNama() + "Berperan Sebagai Mahasiswa.");
+    }
 }
