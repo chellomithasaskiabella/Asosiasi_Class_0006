@@ -70,4 +70,7 @@ class Mahasiswa extends Orang {
         this.mataKuliahDiambil = new ArrayList<>();
     }
 
+    public void ambilMataKuliah (MataKuliah mataKuliah) {
+        mataKuliahDiambil.add(mataKuliah);
+    }
 }
