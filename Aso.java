@@ -48,4 +48,10 @@ class Dosen extends Orang {
     public void tampilkanPeran() {
         System.out.println(getNama() + "Berperan Sebagai Dosen");
     }
+
+    public void tampilkanMataKuliahDiajar() {
+        System.out.println("Dosen :" + getNama());
+        System.out.println("NIDN :" + nidn);
+        System.out.println("Mata Kuliah Yang Diajar :");
+    }
 }
