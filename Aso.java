@@ -53,5 +53,14 @@ class Dosen extends Orang {
         System.out.println("Dosen :" + getNama());
         System.out.println("NIDN :" + nidn);
         System.out.println("Mata Kuliah Yang Diajar :");
+
+        for (MataKuliah mk : mataKuliahDiajar) {
+            System.out.println("-" + mk.getInfo());
+        }
     }
+}
+
+class Mahasiswa extends Orang {
+    private String nim;
+    
 }
