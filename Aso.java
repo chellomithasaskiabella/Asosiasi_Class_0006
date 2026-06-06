@@ -13,3 +13,10 @@ abstract class Orang {
 
     public abstract void tampilkanPeran();
 }
+
+class Matakuliah {
+    Private String kode;
+    Private String nama;
+    private int sks;
+
+}
