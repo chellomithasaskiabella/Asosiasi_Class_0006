@@ -10,4 +10,6 @@ abstract class Orang {
     public String getNama() {
         return nama;
     }
+
+    public abstract void tampilkanPeran();
 }
