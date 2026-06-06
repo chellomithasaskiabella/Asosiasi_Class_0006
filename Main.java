@@ -78,4 +78,18 @@ class Mahasiswa extends Orang {
     public void tampilkanPeran() {
         System.out.println(getNama() + "Berperan Sebagai Mahasiswa.");
     }
+
+    public void tampilkanKrs() {
+        System.out.println("Mahasiswa : " + getNama());
+        System.out.println("Nim       : " + nim);
+        System.out.println("Mata Kuliah Yang Diambil :");
+
+        for (MataKuliah mk : mataKuliahDiambil) {
+            System.out.println("-" + mk.getInfo());
+        }
+    }
+}
+
+public class Main {
+    
 }
