@@ -14,12 +14,12 @@ abstract class Orang {
     public abstract void tampilkanPeran();
 }
 
-class Matakuliah {
+class MataKuliah {
     private String kode;
     private String nama;
     private int sks;
 
-    public Matakuliah (String kode, String nama, int sks) {
+    public MataKuliah (String kode, String nama, int sks) {
         this.kode = kode;
         this.nama = nama;
         this.sks = sks;
@@ -32,7 +32,7 @@ class Matakuliah {
 
 class Dosen extends Orang {
     private String nidn;
-    private ArrayList<Matakuliah> mataKuliahDiajar;
+    private ArrayList<MataKuliah> mataKuliahDiajar;
 
     public Dosen (String nama, String nidn) {
         super(nama);
@@ -40,4 +40,7 @@ class Dosen extends Orang {
         this.mataKuliahDiajar = new ArrayList<>();
     }
 
+    public void tambahMataKuliah (MataKuliah mataKuliah) {
+        mataKuliahDiajar.add(mataKuliah);
+    }
 }
