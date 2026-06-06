@@ -29,3 +29,7 @@ class Matakuliah {
         return kode + "-" + nama + "(" + sks + "SKS)";
     }
 }
+
+class Dosen extends Orang {
+    private String nidn;
+}
