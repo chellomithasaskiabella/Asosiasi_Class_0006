@@ -94,6 +94,15 @@ public class Main {
     public static void main(String[] args) {
         MataKuliah pbo = new MataKuliah("IF 204", "Pemrograman Berorientasi Objek", 3);
         MataKuliah web = new MataKuliah("IF 305", "Pemrograman Web", 3);
-        MataKuliah struktukData = new MataKuliah("IF 201", "Struktur Data", 3)
+        MataKuliah strukturData = new MataKuliah("IF 201", "Struktur Data", 3);
+
+        Dosen dosen = new Dosen("Pak Indra", "0712345601");
+        dosen.tambahMataKuliah (pbo);
+        dosen.tambahMataKuliah (web);
+
+        Mahasiswa mahasiswa = new Mahasiswa ("Andi Pratama", "230411001");
+        mahasiswa.ambilMataKuliah(pbo);
+        mahasiswa.ambilMataKuliah (strukturData);
+        
     }
 }
