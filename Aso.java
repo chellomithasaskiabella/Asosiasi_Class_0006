@@ -19,4 +19,7 @@ class Matakuliah {
     Private String nama;
     private int sks;
 
+    public MataKuliah(String kode, String nama, int sks) {
+        
+    }
 }
